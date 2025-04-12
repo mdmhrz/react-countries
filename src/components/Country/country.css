@@ -1,0 +1,9 @@
+.country {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.country-visited {
+    background-color: darkgray;
+}
