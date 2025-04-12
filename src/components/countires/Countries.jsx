@@ -3,7 +3,8 @@ import Country from '../Country/country';
 import './countries.css'
 
 const Countries = ({countriesPromise}) => {
-    const [visitedCountries, setVisitedCountries] = useState([])
+    const [visitedCountries, setVisitedCountries] = useState([]);
+    const [visitedFlags, setVisitedFlags] = useState([])
 
     const countries = use(countriesPromise);
     // console.log(countries)
@@ -13,6 +14,10 @@ const Countries = ({countriesPromise}) => {
         // console.log(visitedCountries)
         const newVisitedCountries = [...visitedCountries, country];
         setVisitedCountries(newVisitedCountries);
+    }
+
+    const handleVisitedFlags = (flag) => {
+        console.log('Flags is added ', flag);
         
     }
     
@@ -30,8 +35,10 @@ const Countries = ({countriesPromise}) => {
             {
                 countries.map(country => <Country
                     key={country.cca3}
+                    handleVisitedFlags = {handleVisitedFlags}
                     handleVisitedCountries = {handleVisitedCountries}
                     country={country}></Country>)
+
             }
             </div>
  
