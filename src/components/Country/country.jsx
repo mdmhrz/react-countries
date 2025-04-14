@@ -20,7 +20,7 @@ const Country = ({country, handleVisitedCountries, handleVisitedFlag}) => {
             <p>Independent: {country.independent? "Free": "Not Free"}</p>
             <p>Population: {country.population}</p>
             <button onClick={handleVisited}>{visited? 'Visited': 'Not Visited'}</button>
-            <button onClick={() => handleVisitedFlag(country.flags.png)}>Add Visited Flag</button>
+            <button onClick={()=> handleVisitedFlag(country.flags.png)}>Add Visited Flag</button>
         </div>
     );
 };

@@ -7,3 +7,7 @@
 .countries-visited {
     background-color: darkgray;
 }
+
+.visited-flags-container img{
+    width: 100px;
+}
