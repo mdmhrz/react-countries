@@ -25,7 +25,7 @@ const Countries = ({countriesPromise}) => {
     
     return (
         <div>
-            <h1>Travelling Countries : {countries.length} </h1>
+            <h1>Nadir vai Total Travelling Countries : {countries.length} </h1>
             <h3>Traveled so far: {visitedCountries.length} </h3>
             <div className='visited-flags-container'>
                 {
